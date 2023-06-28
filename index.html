@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IWA1</title>
-    <link ref="styleshhet" href="/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>IWA1-Tally Count</title>
 </head>
-<body>
 
+<body>
     <script src="/IWA1.js"></script>
+
+    <header class="header">
+        <h1>
+            Tally Count
+        </h1>
+    </header>
+
+
+    <aside class="Controls">
+
+        <label>
+            <span>Display</span>
+            <select>
+                <option>Single</option>
+                <option>Multiple</option>
+            </select>
+        </label>
+
+        <label>
+            <span>Counter</span>
+            <select>
+                <option>Counter 1</option>
+                <option>Counter 2</option>
+                <option>Counter 3</option>
+            </select>
+        </label>
+
+        <button></button>
     
+    </aside>
+
+    <main class="Counter">
+
+        <input class="counter__value" readonly value="10">
+
+        <div class="Counter__actions">
+            <button class="counter__button counter__button_first" >-</button>
+            <button class="counter__button">+</button>
+        </div>
+
+    </main>
+
+
+    <footer></footer>
+
 </body>
+
 </html>
