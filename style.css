@@ -10,20 +10,40 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     margin: 0;
     background: var(--color-medium-grey);
     color: var(--color-white);
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
+
+/*header*/
 
 .header {
     text-align: center;
 }
 
+.header__title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color-light-grey);
+}
+
+/*controls*/
+
 .controls {
     background: yellow ;
 }
+
+/*counter*/
 
 .counter {
     background: #33333d;
@@ -38,7 +58,7 @@ body {
     background: none;
     color: #ffffff;
     border-width: 0;
-    border-bottom: 1px solid var(--color-light-grey);
+    border-bottom: 1px solid var(--color-light-grey); 
 }
 
 .counter__button {
@@ -47,12 +67,33 @@ body {
     border-width: 0;
     color: var(--color-light-grey);
     font-size: 10rem;
+    transition: transform 0.3s;
+    transform: translateY(0);
+
 }
 
-.conter__actions {
+.counter__button:active {
+    background: #424250;
+}
+
+.counter__actions {
     display: flex;
 }
 
 .counter__button_first {
     border-right: 1px solid var(--color-light-grey);
+}
+
+/*footer*/
+
+.footer {
+    background: var(--color-medium-grey);
+    color: var(--color-light-grey);
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer__link {
+    color: #ffffff;
 }
